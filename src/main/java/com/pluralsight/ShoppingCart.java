@@ -53,4 +53,12 @@ public class ShoppingCart {
   setOrderTotal(dblTotal);
  }
 
+ public void deleteCartItem(int index){
+  try {
+   cartItems.remove(index);
+  }catch (Exception e){
+   e.printStackTrace();
+  }
+ }
+
 }
