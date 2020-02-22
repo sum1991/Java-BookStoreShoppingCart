@@ -61,4 +61,14 @@ public class ShoppingCart {
   }
  }
 
+ public void updateCartItem(int index, int quantity){
+  try {
+    CartItem ci = cartItems.get(index);
+    ci.setQuantity(quantity);
+
+  }catch (Exception e){
+
+  }
+ }
+
 }
